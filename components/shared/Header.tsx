@@ -23,10 +23,6 @@ const Header = () => {
       </ul>
 
       <div className="flex justify-end flex-1 px-2">
-        <button className="btn btn-sm btn-active btn-ghost mr-2">Entrar</button>
-        <button className="btn btn-sm btn-active btn-primary">
-          Cadastre-se
-        </button>
         <div className="flex items-stretch">
           <label className="swap swap-rotate px-4">
             {/* this hidden checkbox controls the state */}
@@ -51,6 +47,8 @@ const Header = () => {
             </svg>
           </label>
         </div>
+        <button className="btn btn-active btn-ghost mr-2">Entrar</button>
+        <button className="btn btn-active btn-primary">Cadastre-se</button>
       </div>
     </header>
   );
