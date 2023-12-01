@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen justify-between items-center p-24">
+    <main className="flex min-h-screen justify-between items-center p-24 py-20">
       <div className="flex self-start flex-col gap-4">
         <span className="text-7xl font-bold max-w-3xl self-start">
-          Você no controle dos seus investimentos
+          Você controlando seus investimentos
         </span>
-        <span className="self-start text-xl max-w-3xl">
+        <span className="self-start text-lg max-w-2xl">
           Com a Foxbat você tem acesso a uma plataforma completa para gerenciar
           seus investimentos, com dados em tempo real e de forma simples e
           intuitiva.
