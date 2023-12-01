@@ -1,9 +1,10 @@
 import Image from "next/image";
+import animations from "@/animations/animations.module.css";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen justify-between items-center p-24 py-20">
-      <div className="flex self-start flex-col gap-4">
+      <div className={animations.fade_up + " flex self-start flex-col gap-4"}>
         <span className="text-7xl font-bold max-w-3xl self-start">
           Você controlando seus investimentos
         </span>
@@ -14,10 +15,7 @@ export default function Home() {
         </span>
       </div>
       <div className="relative">
-        <div
-          className="mockup-phone
-        "
-        >
+        <div className={animations.move_left_fast + " mockup-phone"}>
           <div className="camera"></div>
           <div className="display">
             <div className="artboard artboard-demo h-[497px] w-[280px]">
@@ -25,7 +23,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="mockup-browser border bg-base-100 absolute h-1/2 w-96 left-[-250px] bottom-0">
+        <div
+          className={
+            animations.move_up_fast +
+            " mockup-browser border bg-base-100 absolute h-1/2 w-96 left-[-250px] bottom-0"
+          }
+        >
           <div className="mockup-browser-toolbar">
             <div className="input">foxbat.cloud</div>
           </div>
