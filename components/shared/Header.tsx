@@ -10,7 +10,7 @@ const Header = () => {
           Foxbat <span className="text-[0.6rem] font-normal">1.0.0-alpha</span>
         </a>
       </div>
-      <ul className="menu menu-sm dropdown-content flex-row z-[1] p-2 bg-base-100 rounded-box">
+      <ul className="menu menu-sm dropdown-content flex-row z-[1] p-2  rounded-box">
         <li>
           <a>Início</a>
         </li>
