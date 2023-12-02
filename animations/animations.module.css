@@ -10,6 +10,10 @@
  animation: 2s 1 move_up_fast;
 }
 
+.move_right_fast {
+ animation: 2s 1 move_right_fast;
+}
+
 @keyframes fade_up {
 0% {
     opacity: 0;
@@ -31,6 +35,17 @@
     transform: translateX(0);
 }
 }
+
+@keyframes move_right_fast {
+    0% {
+        opacity: 1;
+        transform: translateX(-500px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    }
 
 @keyframes move_up_fast {
     0% {
