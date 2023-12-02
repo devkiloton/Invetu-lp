@@ -43,7 +43,7 @@ export default function FormNewsletter() {
             <input
               ref={nameRef}
               placeholder="Seu nome"
-              className="input input-bordered w-full max-w-xs"
+              className="input input-bordered w-full"
             />
           </div>
           <div className="form_group">
@@ -51,7 +51,7 @@ export default function FormNewsletter() {
               ref={emailRef}
               type="email"
               placeholder="Seu email"
-              className="input input-bordered w-full max-w-xs"
+              className="input input-bordered w-full"
             />
           </div>
           <button className="btn btn-primary w-full">
