@@ -1,6 +1,8 @@
 // import { changeTheme } from "~/helpers/change-theme";
 // import logoSymbol from "~/assets/images/logoSymbol.svg";
 // import { SignOutButton } from "../domain/auth/SignOutButton";
+"use client";
+import { changeTheme } from "@/helpers/change-theme";
 
 const Header = () => {
   return (
@@ -15,7 +17,7 @@ const Header = () => {
           <a>Início</a>
         </li>
         <li>
-          <a>Ferramentas</a>
+          <a>Funcionalidades</a>
         </li>
         <li>
           <a>Suporte</a>
@@ -26,7 +28,7 @@ const Header = () => {
         <div className="flex items-stretch">
           <label className="swap swap-rotate px-4">
             {/* this hidden checkbox controls the state */}
-            <input type="checkbox" />
+            <input onClick={changeTheme} type="checkbox" />
 
             {/* sun icon */}
             <svg
