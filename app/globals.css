@@ -3,6 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --pc: var(--b1);
+}
+
 body {
   font-family: 'Poppins', sans-serif; 
+  
 }
