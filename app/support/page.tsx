@@ -19,7 +19,7 @@ export default function Support() {
               Devido a Invetu ainda estar em fase de desenvolvimento e ser um
               projeto sem fins lucrativos, feedbacks, sugestões e dúvidas são
               muito importantes para o desenvolvimento do projeto e são muito
-              bem vindas, analisadas e encorajadas.
+              bem vindos, analisados e encorajados.
             </p>
           </div>
           <div
