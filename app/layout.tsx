@@ -7,7 +7,7 @@ import Footer from "@/components/shared/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Foxbat",
+  title: "Invetu",
   description: "Seus investimentos em forma de dados",
 };
 
