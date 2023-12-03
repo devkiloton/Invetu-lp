@@ -3,32 +3,46 @@
 // import { SignOutButton } from "../domain/auth/SignOutButton";
 "use client";
 import { changeTheme } from "@/helpers/change-theme";
+import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
   return (
     <header className="navbar glass bg-none hover:bg-none rounded-box sticky mt-4 mx-4 w-[unset] top-4 z-[100] min-[768px]:mx-8">
-      <div className="flex-1 px-2 lg:flex-none">
-        <a className="font-bold btn btn-ghost normal-case text-xl gap-x-1">
-          Foxbat <span className="text-[0.6rem] font-normal">1.0.0-alpha</span>
-        </a>
+      <div className="flex lg:flex-none">
+        <Link
+          href="/"
+          className="font-bold btn btn-ghost normal-case text-xl gap-x-2"
+        >
+          <Image src="/logo.svg" width="24" height="24" alt="Investu logo" />
+          Invetu <span className="text-[0.6rem] font-normal">1.0.0-alpha</span>
+        </Link>
       </div>
-      <ul className="menu menu-sm dropdown-content flex-row z-[1] p-2  rounded-box">
+      <ul className="menu menu-sm dropdown-content flex-row z-[1] p-2 rounded-box hidden min-[768px]:flex">
         <li>
-          <a>Início</a>
+          <Link href="/">Início</Link>
         </li>
         <li>
-          <a>Funcionalidades</a>
+          <Link href="/#features">funcionalidades</Link>
         </li>
         <li>
-          <a>Suporte</a>
+          <Link href="/#about">Sobre</Link>
+        </li>
+        <li>
+          <Link href="support">Suporte</Link>
         </li>
       </ul>
 
       <div className="flex justify-end flex-1 px-2">
         <div className="flex items-stretch">
-          <label className="swap swap-rotate px-4">
+          <label aria-label="icon" className="swap swap-rotate px-4">
+            <input
+              id="icon"
+              name="icon"
+              onClick={changeTheme}
+              type="checkbox"
+            />
             {/* this hidden checkbox controls the state */}
-            <input onClick={changeTheme} type="checkbox" />
 
             {/* sun icon */}
             <svg
@@ -49,8 +63,9 @@ const Header = () => {
             </svg>
           </label>
         </div>
-        <button className="btn btn-active btn-ghost mr-2">Entrar</button>
-        <button className="btn btn-active btn-primary">Cadastre-se</button>
+        <Link href="https://app.invetu.com" className="btn btn-primary">
+          Acessar
+        </Link>
       </div>
     </header>
   );
