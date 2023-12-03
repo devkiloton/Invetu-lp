@@ -1,5 +1,6 @@
 import React from "react";
 import animations from "@/animations/animations.module.css";
+import SupportForm from "@/components/support/SupportForm";
 
 export default function Support() {
   return (
@@ -27,31 +28,7 @@ export default function Support() {
               " card shrink-0 w-full max-w-md shadow-2xl bg-base-100"
             }
           >
-            <form className="card-body rounded-xl">
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Email</span>
-                </label>
-                <input
-                  type="email"
-                  placeholder="Email"
-                  className="input input-bordered"
-                  required
-                />
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Mensagem</span>
-                </label>
-                <textarea
-                  className="textarea min-h-[150px] textarea-bordered text-base"
-                  placeholder="Em que podemos te ajudar?"
-                ></textarea>
-              </div>
-              <div className="form-control mt-6">
-                <button className="btn btn-primary">Enviar</button>
-              </div>
-            </form>
+            <SupportForm />
           </div>
         </div>
       </section>

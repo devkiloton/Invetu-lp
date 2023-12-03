@@ -7,27 +7,21 @@ export default function FormNewsletter() {
   const emailRef = useRef<any>();
   const nameRef = useRef<any>();
   const [loading, setLoading] = useState(false);
-  useEffect(() => emailjs.init("YOUR-PUBLIC-KEY-HERE"), []);
-  // Add these
+  const serviceId = process.env.SERVICE_ID as string;
+  const templateId = process.env.TEMPLATE_ID as string;
+  const publicKey = process.env.PUBLIC_KEY as string;
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(() => emailjs.init(publicKey), []);
   const handleSubmit = async (element: any) => {
     element.preventDefault();
-    const serviceId = process.env.SERVICE_ID as string;
-    const templateId = process.env.TEMPLATE_ID as string;
-    const publicKey = process.env.PUBLIC_KEY as string;
     try {
       setLoading(true);
-      await emailjs.send(
-        serviceId,
-        templateId,
-        {
-          name: nameRef.current?.value,
-          recipient: emailRef.current?.value,
-        },
-        publicKey
-      );
-      alert("email successfully sent check inbox");
+      await emailjs.send(serviceId, templateId, {
+        name: nameRef.current?.value,
+        recipient: emailRef.current?.value,
+      });
     } catch (error) {
-      console.log(error);
+      console.error(error);
     } finally {
       setLoading(false);
     }
