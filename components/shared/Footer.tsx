@@ -9,7 +9,7 @@ export default function Footer() {
           Mapa do site
         </header>
         <Link href="/">Início</Link>
-        <Link href="/#features">funcionalidades</Link>
+        <Link href="/#features">funções</Link>
         <Link href="/#about">Sobre</Link>
         <Link href="support">Suporte</Link>
       </nav>

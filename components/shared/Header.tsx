@@ -10,12 +10,53 @@ const Header = () => {
   return (
     <header className="navbar glass bg-none hover:bg-none rounded-box sticky mt-4 mx-4 w-[unset] top-4 z-[100] min-[768px]:mx-8">
       <div className="flex lg:flex-none">
+        <div className="dropdown dropdown-start md:hidden">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn btn-ghost rounded-btn p-0 pl-1"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              className="swap-on fill-current w-5 h-5"
+            >
+              <rect x="2" y="8.5" width="16" height="3" rx="1.5" />
+              <rect x="2" y="3" width="16" height="3" rx="1.5" />
+              <rect x="2" y="14" width="16" height="3" rx="1.5" />
+            </svg>
+          </div>
+          <ul
+            tabIndex={0}
+            className="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-4"
+          >
+            <li>
+              <Link href="/">Início</Link>
+            </li>
+            <li>
+              <Link href="/#features">Funções</Link>
+            </li>
+            <li>
+              <Link href="/#about">Sobre</Link>
+            </li>
+            <li>
+              <Link href="support">Suporte</Link>
+            </li>
+          </ul>
+        </div>
         <Link
           href="/"
-          className="font-bold btn btn-ghost normal-case text-xl gap-x-2"
+          className="font-bold btn btn-ghost p-1 md:p-2 normal-case text-xl gap-x-2"
         >
-          <Image src="/logo.svg" width="24" height="24" alt="Investu logo" />
-          Invetu <span className="text-[0.6rem] font-normal">1.0.0-alpha</span>
+          <Image src="/logo.svg" width="28" height="28" alt="Investu logo" />
+          <div className="flex flex-col">
+            <span className="leading-4">Invetu</span>
+            <span className="text-[0.6rem] leading-3 font-normal text-start">
+              1.0.0-alpha
+            </span>
+          </div>
         </Link>
       </div>
       <ul className="menu menu-sm dropdown-content flex-row z-[1] p-2 rounded-box hidden min-[768px]:flex">
@@ -23,7 +64,7 @@ const Header = () => {
           <Link href="/">Início</Link>
         </li>
         <li>
-          <Link href="/#features">funcionalidades</Link>
+          <Link href="/#features">Funções</Link>
         </li>
         <li>
           <Link href="/#about">Sobre</Link>

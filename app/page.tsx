@@ -80,7 +80,7 @@ export default function Home() {
       >
         <div className=" flex flex-col text-center gap-5">
           <span className="text-base font-bold uppercase text-primary ">
-            Funcionalidades
+            Funções
           </span>
           <span className=" text-3xl">
             Monitore seus investimentos sem <b>nenhum custo</b> e <br /> com{" "}
