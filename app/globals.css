@@ -6,3 +6,6 @@
   --pc: var(--b1);
 }
 
+html {
+  color-scheme: light;
+}
