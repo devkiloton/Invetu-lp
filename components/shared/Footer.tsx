@@ -43,7 +43,7 @@ export default function Footer() {
           <div className="tooltip" data-tip="Nos siga no Nostr">
             <Link
               aria-label="Perfil da Invetu no Nostr"
-              href="https://snort.social/npub1dzlcz4ghpaqpuaqm0hxcna243us34v82e4sjsnnp3z8qx72ltk6sdkn8qa"
+              href="https://iris.to/npub1dzlcz4ghpaqpuaqm0hxcna243us34v82e4sjsnnp3z8qx72ltk6sdkn8qa"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
