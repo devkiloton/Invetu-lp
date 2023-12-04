@@ -53,24 +53,34 @@ export default function Home() {
             }
           >
             <div className="camera"></div>
-            <div className="display">
-              <div className="artboard artboard-demo h-[497px] w-[280px]">
+            <div className="display h-[487px] w-[240px]">
+              <Image
+                className="pt-7"
+                height={700}
+                width={240}
+                alt="Representação da home page do app em um celular"
+                src="/images/home-mobile-light.png"
+              />
+              {/* <div className="artboard artboard-demo h-[497px] w-[280px]">
                 Hi.
-              </div>
+              </div> */}
             </div>
           </div>
           <div
             className={
               animations.move_up_fast +
-              " mockup-browser bg-base-100 absolute h-1/2 w-96 left-[-250px] bottom-5 shadow-2xl hidden min-[1024px]:block"
+              " mockup-browser bg-base-100 absolute left-[-260px] w-[448px] bottom-0 shadow-2xl hidden min-[1124px]:block border-[5px] border-primary"
             }
           >
             <div className="mockup-browser-toolbar">
               <div className="input">invetu.com</div>
             </div>
-            <div className="flex justify-center px-4 py-16 bg-base-200 h-full">
-              Hello!
-            </div>
+            <Image
+              src="/images/home-light.png"
+              height={252}
+              width={448}
+              alt="Representação da home page do app em um navegador desktop"
+            />
           </div>
         </div>
       </section>
