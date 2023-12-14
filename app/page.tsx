@@ -6,6 +6,7 @@ import { setTheme } from "@/helpers/set-theme";
 import { localStateManager } from "@/helpers/local-state-manager";
 import { useEffect } from "react";
 import ParallaxSection from "@/components/home/parallax-section/ParallaxSection";
+import Head from "next/head";
 
 export default function Home() {
   const theme = localStateManager.theme.get();
@@ -29,6 +30,9 @@ export default function Home() {
   }, []);
   return (
     <main className="flex min-h-screen flex-col">
+      <Head>
+        <title>Início</title>
+      </Head>
       <section className="flex justify-between flex-col md:flex-row items-center gap-12 md:gap-4 p-6 md:px-24 md:py-20 w-full">
         <div className="self-start flex flex-col items-center md:items-start gap-12 md:gap-16">
           <div className={animations.fade_up + " flex  flex-col gap-4"}>

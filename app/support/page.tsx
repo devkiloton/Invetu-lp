@@ -1,10 +1,14 @@
 import React from "react";
 import animations from "@/animations/animations.module.css";
 import SupportForm from "@/components/support/SupportForm";
+import Head from "next/head";
 
 export default function Support() {
   return (
     <div className="flex flex-col">
+      <Head>
+        <title>Legal</title>
+      </Head>
       <section className="flex justify-between flex-col md:flex-row items-center gap-12 md:gap-4 p-6 md:px-24 md:py-20 w-full">
         <div className="hero-content flex-col gap-10 lg:flex-row-reverse">
           <div
