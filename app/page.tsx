@@ -32,7 +32,7 @@ export default function Home() {
       <section className="flex justify-between flex-col md:flex-row items-center gap-12 md:gap-4 p-6 md:px-24 md:py-20 w-full">
         <div className="self-start flex flex-col items-center md:items-start gap-12 md:gap-16">
           <div className={animations.fade_up + " flex  flex-col gap-4"}>
-            <span className="text-3xl md:text-4xl lg:text-6xl font-bold text-primary max-w-3xl self-start">
+            <span className="text-3xl md:text-4xl lg:text-6xl font-bold max-w-3xl self-start">
               Você controlando seus investimentos
             </span>
             <span className="self-start text-lg max-w-2xl">
@@ -113,21 +113,24 @@ export default function Home() {
         <div className="hero h-full bg-base-200 rounded-2xl">
           <div className="hero-content flex-col gap-5 lg:flex-row">
             <Image
+              className="h-48 md:h-56"
               src="/logo.svg"
               width={356}
               height={356}
               alt="Investu logo"
             />
             <div>
-              <h1 className="text-3xl font-bold">Invetu</h1>
-              <p className="py-2 leading-5">
+              <h1 className="text-2xl font-bold text-center md:text-start">
+                Invetu
+              </h1>
+              <p className="py-2 leading-5 text-sm">
                 A Invetu é um projeto (em breve open source), que visa fornecer
                 dados de investimentos de forma gratuita e de fácil acesso para
                 todos. Isso é feito através de dados públicos como B3, Banco
                 Central e algumas APIs de terceiros, que são tratados e
                 mostrados para os utilizadores do sistema.
               </p>
-              <p className="py-2 leading-5">
+              <p className="py-2 leading-5 text-sm">
                 No momento a plataforma encontra-se em desenvolvimento e no
                 estágio alpha, onde funcionalidades estão sendo adicionadas e
                 testadas. Ainda não há uma data de lançamento para a versão beta
