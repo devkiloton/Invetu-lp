@@ -1,13 +1,15 @@
-import Head from "next/head";
+import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Invetu | Política de privacidade",
+  description: "Política de privacidade da Invetu.",
+};
 
 export default function PrivacyPolicy() {
   return (
     <div className="flex flex-col gap-5 p-6 md:px-24">
-      <Head>
-        <title>Política de privacidade</title>
-      </Head>
       <h2 className="text-3xl font-bold">
         <span>Política Privacidade</span>
       </h2>

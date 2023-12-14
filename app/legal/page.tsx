@@ -1,13 +1,16 @@
+import { Metadata } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import React from "react";
 
+export const metadata: Metadata = {
+  title: "Invetu | Legal",
+  description: "Documentos legais da Invetu.",
+};
+
 export default function Legal() {
   return (
     <div className="min-h-[65vh] p-6 md:px-24">
-      <Head>
-        <title>Legal</title>
-      </Head>
       <ul className="flex flex-col md:flex-row gap-5 w-full">
         <li>
           <div className="card card-compact w-full bg-base-100 shadow-xl">

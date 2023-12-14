@@ -1,13 +1,14 @@
-import Head from "next/head";
-import Link from "next/link";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Invetu | Termos de uso",
+  description: "Termos de uso da Invetu.",
+};
 
 export default function TermsOfUse() {
   return (
     <div className="flex flex-col gap-5 p-6 md:px-24">
-      <Head>
-        <title>Termos de uso</title>
-      </Head>
       <h2 className="text-3xl font-bold">
         <span>1. Termos</span>
       </h2>
