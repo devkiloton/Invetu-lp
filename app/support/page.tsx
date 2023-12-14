@@ -1,6 +1,11 @@
 import React from "react";
 import animations from "@/animations/animations.module.css";
 import SupportForm from "@/components/support/SupportForm";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Invetu | Suporte",
+  description: "Entre em contato com a equipe da Invetu.",
+};
 
 export default function Support() {
   return (

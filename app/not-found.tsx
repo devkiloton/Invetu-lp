@@ -1,5 +1,11 @@
+import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Nada encontrado",
+  description: "Não encontramos o que você está procurando.",
+};
 
 export default function NotFound() {
   return (

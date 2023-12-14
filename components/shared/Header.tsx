@@ -1,6 +1,3 @@
-// import { changeTheme } from "~/helpers/change-theme";
-// import logoSymbol from "~/assets/images/logoSymbol.svg";
-// import { SignOutButton } from "../domain/auth/SignOutButton";
 "use client";
 import { changeTheme } from "@/helpers/change-theme";
 import Image from "next/image";
@@ -44,6 +41,9 @@ const Header = () => {
             <li>
               <Link href="support">Suporte</Link>
             </li>
+            <li>
+              <Link href="/legal">Legal</Link>
+            </li>
           </ul>
         </div>
         <Link
@@ -71,6 +71,9 @@ const Header = () => {
         </li>
         <li>
           <Link href="support">Suporte</Link>
+        </li>
+        <li>
+          <Link href="/legal">Legal</Link>
         </li>
       </ul>
 

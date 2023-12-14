@@ -12,6 +12,7 @@ export default function Footer() {
         <Link href="/#features">funções</Link>
         <Link href="/#about">Sobre</Link>
         <Link href="support">Suporte</Link>
+        <Link href="/legal">Legal</Link>
       </nav>
       <nav>
         <header className="uppercase font-bold text-base-content">
