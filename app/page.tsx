@@ -55,7 +55,6 @@ export default function Home() {
             <div className="camera"></div>
             <div className="display h-[487px] w-[240px]">
               <Image
-                className="pt-7"
                 height={700}
                 width={240}
                 alt="Representação da home page do app em um celular"
