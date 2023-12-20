@@ -53,13 +53,12 @@ export default function Home() {
             }
           >
             <div className="camera"></div>
-            <div className="display h-[487px] w-[240px]">
+            <div className="display">
               <Image
-                className="pt-7"
-                height={700}
+                height={520}
                 width={240}
                 alt="Representação da home page do app em um celular"
-                src="/images/home-mobile-light.png"
+                src="/images/home-mobile-light.webp"
               />
               {/* <div className="artboard artboard-demo h-[497px] w-[280px]">
                 Hi.
